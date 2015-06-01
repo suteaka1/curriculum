@@ -1,10 +1,9 @@
 #!/bin/sh
 aiueo=あいうえお
 cd ~
-ls -la
 mkdir foo
 cd foo
 touch bar
-echo $aiueo >> ~/bar
+echo "$aiueo"
 cd ~
 exit 0
