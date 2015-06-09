@@ -4,4 +4,4 @@
 sc=あいうえお
 
 
-echo "$st"
+echo "$sc"
