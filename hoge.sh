@@ -1,3 +1,4 @@
+#!/bin/sh
 ip1=`ifconfig | grep -A 1 'eth0' | grep 'inet' | awk '{ print $2}' | sed -e 's/addr://g'| tr '.' '    ' | awk '{ print $1}'`
 ip2=`ifconfig | grep -A 1 'eth0' | grep 'inet' | awk '{ print $2}' | sed -e 's/addr://g'| tr '.' '    ' | awk '{ print $2}'`
 ip3=`ifconfig | grep -A 1 'eth0' | grep 'inet' | awk '{ print $2}' | sed -e 's/addr://g'| tr '.' '    ' | awk '{ print $3}'`
